@@ -5,7 +5,7 @@ const initialMessages = [
   {
     id: 1,
     name: "Mark Webber",
-    image: "./src/assets/avatar-mark-webber.webp",
+    image: "/avatar-mark-webber.webp",
     text: "reacted to your recent post",
     post: "My first tournament today!",
     timeAgo: "1m",
@@ -14,7 +14,7 @@ const initialMessages = [
   {
     id: 2,
     name: "Angela Gray",
-    image: "./src/assets/avatar-angela-gray.webp",
+    image: "/avatar-angela-gray.webp",
     text: "followed you",
     timeAgo: "5m",
     status: "unread",
@@ -22,7 +22,7 @@ const initialMessages = [
   {
     id: 3,
     name: "Jacob Thompson",
-    image: "./src/assets/avatar-jacob-thompson.webp",
+    image: "/avatar-jacob-thompson.webp",
     text: "has joined your group",
     group: "Chess Club",
     timeAgo: "1 day",
@@ -31,7 +31,7 @@ const initialMessages = [
   {
     id: 4,
     name: "Rizky Hasanuddin",
-    image: "./src/assets/avatar-rizky-hasanuddin.webp",
+    image: "/avatar-rizky-hasanuddin.webp",
     text: "sent you a private message",
     pvtMsg:
       "Hello, thanks for setting up the chess club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
@@ -41,16 +41,16 @@ const initialMessages = [
   {
     id: 5,
     name: "Kimberly Smith",
-    image: "./src/assets/avatar-kimberly-smith.webp",
+    image: "/avatar-kimberly-smith.webp",
     text: "commented on your picture",
-    msgImg: "./src/assets/image-chess.webp",
+    msgImg: "/image-chess.webp",
     timeAgo: "1 week",
     status: "read",
   },
   {
     id: 6,
     name: "Nathan Peterson",
-    image: "./src/assets/avatar-nathan-peterson.webp",
+    image: "/avatar-nathan-peterson.webp",
     text: "reacted to your recent post",
     post: "5 end-game strategies to increase your wi rate",
     timeAgo: "2 weeks",
@@ -59,7 +59,7 @@ const initialMessages = [
   {
     id: 7,
     name: "Ana Kim",
-    image: "./src/assets/avatar-anna-kim.webp",
+    image: "/avatar-anna-kim.webp",
     text: "left the group",
     group: "Chess Club",
     timeAgo: "2 weeks",
