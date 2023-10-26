@@ -70,12 +70,12 @@ const initialMessages = [
 function Notifications({ unreadCount }) {
   return (
     <section>
-      <h2 className='font-bold text-2xl'>
+      <h1 className='font-bold text-2xl'>
         Notifications{" "}
         <span className='bg-blue-700 text-white px-3 rounded-lg'>
           {unreadCount}
         </span>{" "}
-      </h2>
+      </h1>
     </section>
   );
 }
