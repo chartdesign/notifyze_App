@@ -96,7 +96,7 @@ function Messages({ messages, markAsRead, markAsUnread }) {
     <div>
       <ul>
         {messages.map((message) => (
-          <div
+          <li
             key={message.id}
             onClick={() => {
               if (message.status === "unread") {
@@ -132,9 +132,9 @@ function Messages({ messages, markAsRead, markAsUnread }) {
               ) : null}
             </div>
             {message.msgImg ? (
-              <img src={message.msgImg} className='max-w-[60px] max-h-[60px]' />
+              <img src={message.msgImg} alt='chess board' className='max-w-[60px] max-h-[60px]' />
             ) : null}
-          </div>
+          </li>
         ))}
       </ul>
     </div>
