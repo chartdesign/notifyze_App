@@ -69,14 +69,14 @@ const initialMessages = [
 
 function Notifications({ unreadCount }) {
   return (
-    <div>
+    <section>
       <h2 className='font-bold text-2xl'>
         Notifications{" "}
         <span className='bg-blue-700 text-white px-3 rounded-lg'>
           {unreadCount}
         </span>{" "}
       </h2>
-    </div>
+    </section>
   );
 }
 
@@ -93,7 +93,7 @@ function MarkAllAsRead({ markAllAsRead }) {
 
 function Messages({ messages, markAsRead, markAsUnread }) {
   return (
-    <div>
+    <section>
       <ul>
         {messages.map((message) => (
           <li
@@ -112,7 +112,7 @@ function Messages({ messages, markAsRead, markAsUnread }) {
             <span>
               <img src={message.image} alt='person' className='max-w-[60px]' />
             </span>
-            <div>
+            <section>
               <span className='font-bold text-xl'>{message.name}</span>{" "}
               <span className='text-lg font-light'>{message.text}</span>{" "}
               <span className='text-gray-500 font-semibold'>
@@ -130,14 +130,14 @@ function Messages({ messages, markAsRead, markAsUnread }) {
                   {message.pvtMsg}
                 </p>
               ) : null}
-            </div>
+            </section>
             {message.msgImg ? (
               <img src={message.msgImg} alt='chess board' className='max-w-[60px] max-h-[60px]' />
             ) : null}
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }
 
@@ -183,18 +183,18 @@ function App() {
   }, [messages]);
 
   return (
-    <div className='max-w-[768px] m-auto bg-white md:p-8 md:rounded-3xl '>
-      <div className='flex justify-between m-6'>
+    <article className='max-w-[768px] m-auto bg-white md:p-8 md:rounded-3xl '>
+      <section className='flex justify-between m-6'>
         <Notifications unreadCount={unreadCount} />
         <MarkAllAsRead markAllAsRead={markAllAsRead} />
-      </div>
+      </section>
 
       <Messages
         messages={messages}
         markAsRead={markAsRead}
         markAsUnread={markAsUnread}
       />
-    </div>
+    </article>
   );
 }
 
